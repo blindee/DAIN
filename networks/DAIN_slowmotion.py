@@ -26,7 +26,7 @@ class DAIN_slowmotion(torch.nn.Module):
         self.filter_size = filter_size
         self.training = training
         self.timestep = timestep        
-        self.numFrames =int(1.0/timestep) - 1
+        self.numFrames =int(1/timestep) - 1
         print("Interpolate " +str( self.numFrames )+ " frames")
         i = 0
         self.initScaleNets_filter,self.initScaleNets_filter1,self.initScaleNets_filter2 = \
