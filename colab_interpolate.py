@@ -1,3 +1,5 @@
+import warnings
+warnings.filterwarnings("ignore")
 import time
 import os
 from torch.autograd import Variable
